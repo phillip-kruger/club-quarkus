@@ -1,0 +1,22 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
+
+table {
+    width: 100%;
+}
+
+table::after {
+    content: attr("class");
+}
+
+booking-table, member-table {
+    width: 100%;
+}
+
+booking-table::part(table), member-table::part(table){
+    min-width:100%;
+    border-collapse: collapse;
+}
+
+booking-table::part(tr), member-table::part(tr){
+    border-bottom: 1pt solid #f5f6ff;
+}

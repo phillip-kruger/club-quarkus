@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Quarkus Squash Club</title>        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section class="section">
+            <div class="container">
+                <h1 class="title">
+                    Quarkus Squash Club
+                </h1>
+                <p class="subtitle">
+                    Welcome to the Quarkus Squash Club website!
+                </p>
+
+                <div class="columns">
+                    <div class="column">
+                        <article class="panel is-info">
+                            <p class="panel-heading">
+                                Bookings
+                            </p>
+                            <div class="panel-block">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Time</th>
+                                            <th>Court 1</th>
+                                            <th>Court 2</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                            <div class="panel-block">
+                                
+                                <booking-table fields="startTime">
+                                    <court1:booking court="1" fields="madeBy"></court1:booking>
+                                    <court2:booking court="2" fields="madeBy"></court2:booking>
+                                </booking-table>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="column">
+                        <article class="panel is-info">
+                            <p class="panel-heading">
+                                Members
+                            </p>
+                            <div class="panel-block">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Surname</th>
+                                            <th>Email</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                            <div class="panel-block">
+                                <member-table club="quarkus" fields="name surname email"></member-table>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+        <script src="http://localhost:9091/bookings.js" type="module"></script>
+        <script src="http://localhost:9090/members3.js" type="module"></script>
+    </body>
+</html>
