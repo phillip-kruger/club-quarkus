@@ -11,7 +11,7 @@
         <section class="section">
             <div class="container">
                 <h1 class="title">
-                    Quarkus Squash Club
+                Quarkus Squash Club
                 </h1>
                 <p class="subtitle">
                     Welcome to the Quarkus Squash Club website!
@@ -23,19 +23,7 @@
                             <p class="panel-heading">
                                 Bookings
                             </p>
-                            <div class="panel-block">
-                                <table>
-                                    <thead>
-                                        <tr>
-                                            <th>Time</th>
-                                            <th>Court 1</th>
-                                            <th>Court 2</th>
-                                        </tr>
-                                    </thead>
-                                </table>
-                            </div>
-                            <div class="panel-block">
-                                
+                            <div class="panel-block">    
                                 <booking-table fields="startTime">
                                     <court1:booking court="1" fields="madeBy"></court1:booking>
                                     <court2:booking court="2" fields="madeBy"></court2:booking>
@@ -48,17 +36,6 @@
                             <p class="panel-heading">
                                 Members
                             </p>
-                            <div class="panel-block">
-                                <table>
-                                    <thead>
-                                        <tr>
-                                            <th>Name</th>
-                                            <th>Surname</th>
-                                            <th>Email</th>
-                                        </tr>
-                                    </thead>
-                                </table>
-                            </div>
                             <div class="panel-block">
                                 <member-table club="quarkus" fields="name surname email"></member-table>
                             </div>

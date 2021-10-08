@@ -4,10 +4,6 @@ table {
     width: 100%;
 }
 
-table::after {
-    content: attr("class");
-}
-
 booking-table, member-table {
     width: 100%;
 }
@@ -19,4 +15,10 @@ booking-table::part(table), member-table::part(table){
 
 booking-table::part(tr), member-table::part(tr){
     border-bottom: 1pt solid #f5f6ff;
+    text-align: left;
+}
+
+booking-table::part(th), member-table::part(th){
+    border-bottom: 1pt solid #3e8ed0;
+    text-align: left;
 }
