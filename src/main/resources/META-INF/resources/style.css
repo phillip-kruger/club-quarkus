@@ -4,21 +4,21 @@ table {
     width: 100%;
 }
 
-booking-table, member-table {
+booking-table, member-table, clubs-table {
     width: 100%;
 }
 
-booking-table::part(table), member-table::part(table){
+booking-table::part(table), member-table::part(table), clubs-table::part(table){
     min-width:100%;
     border-collapse: collapse;
 }
 
-booking-table::part(tr), member-table::part(tr){
+booking-table::part(tr), member-table::part(tr), clubs-table::part(tr){
     border-bottom: 1pt solid #f5f6ff;
     text-align: left;
 }
 
-booking-table::part(th), member-table::part(th){
+booking-table::part(th), member-table::part(th), clubs-table::part(th){
     border-bottom: 1pt solid #3e8ed0;
     text-align: left;
 }
