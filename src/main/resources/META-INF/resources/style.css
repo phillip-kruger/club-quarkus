@@ -22,3 +22,15 @@ booking-table::part(th), member-table::part(th), clubs-table::part(th){
     border-bottom: 1pt solid #3e8ed0;
     text-align: left;
 }
+
+.booking-heading {
+    background-color: #ff6146;
+}
+
+.member-heading {
+    background-color: #ffc801;
+}
+
+.league-heading {
+    background-color: #8fbd27;
+}
