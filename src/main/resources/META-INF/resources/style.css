@@ -1,6 +1,6 @@
 @import "webjars/bulma/css/bulma.min.css";
 
-member-table {
+booking-table, member-table {
     --table-border-color: #f5f6ff;
 }
 
